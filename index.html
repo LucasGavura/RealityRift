@@ -12,7 +12,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #cb98d7;">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #c87be3;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#intro">
             <img src="public/assets/images/logo.png" alt="" height="40">
@@ -33,29 +33,38 @@
                 <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item ms-2 d-none d-md-inline">
-                <a class="btn btn-secondary" href="#pricing" style="background-color: #000000;">Book Now</a>
+                <a class="btn btn-secondary" href="#booking" style="background-color: #000000;">Book Now</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     
-    <!-- Home Page Section -->
-    <section class="hero text-center py-5" style="background-image: url('assets/images/hero.jpg');">
+      <section id="home" class="hero text-center py-5" style="background-image: url('public/assets/images/home.png')">
         <div class="container">
-            <h1 class="display-4">Enter a new world</h1>
-            <p class="lead">Reality Rift will provide an escape of reality you never knew you needed</p>
-            <div class="contact-info">
-                <p><i class="fas fa-phone"></i> Call us at 416-444-4444</p>
-                <p><i class="fas fa-map-marker-alt"></i> Visit us at 51 location St</p>
-                <p>Tuesday - Sunday 11:00 AM - 9:00 PM</p>
-            </div>
-            <div class="hero-buttons mt-4">
-                <a href="#" class="btn btn-primary">Book Now</a>
-                <a href="#" class="btn btn-secondary">See our options</a>
+            <div class="row align-items-center">
+                <!-- Text column -->
+                <div class="col-md-6 text-left">
+                    <h1 class="display-4">Enter a new world</h1>
+                    <p class="lead">Reality Rift will provide an escape of reality you never knew you needed</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> Call us at 416-444-4444</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Visit us at 51 location St</p>
+                        <p>Tuesday - Sunday 11:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="hero-buttons mt-4">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="#" class="btn btn-secondary">See our options</a>
+                    </div>
+                </div>
+                <!-- Image column -->
+                <div class="col-md-6">
+                    <img src="public/assets/images/large-image.png" alt="Reality Rift" class="img-fluid">
+                </div>
             </div>
         </div>
     </section>
+  
 
     <!-- The Services Section -->
     <section class="services py-5">
@@ -105,7 +114,6 @@
     </footer>
 
     <!-- Scripts -->
-     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
