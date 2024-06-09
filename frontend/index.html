@@ -2,9 +2,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reality Rift | Virtual Experiences for you and your family</title>
+    <title>Reality Rift</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
 </head>
 <body>
-    <h1>Reality Rift</h1>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="Reality Rift" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Our Experts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-primary" href="#">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page Section -->
+    <section class="hero text-center py-5" style="background-image: url('assets/images/hero.jpg');">
+        <div class="container">
+            <h1 class="display-4">Enter a new world</h1>
+            <p class="lead">Reality Rift will provide an escape of reality you never knew you needed</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> Call us at 416-444-4444</p>
+                <p><i class="fas fa-map-marker-alt"></i> Visit us at 51 location St</p>
+                <p>Tuesday - Sunday 11:00 AM - 9:00 PM</p>
+            </div>
+            <div class="hero-buttons mt-4">
+                <a href="#" class="btn btn-primary">Book Now</a>
+                <a href="#" class="btn btn-secondary">See our options</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Services Section -->
+    <section class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/vr1.jpg" class="card-img-top" alt="Group Activities">
+                        <div class="card-body">
+                            <h5 class="card-title">Group Activities</h5>
+                            <p class="card-text">Participate in fun activities as a group such as escape rooms and team set up by our experts.</p>
+                            <a href="#" class="btn btn-primary">Book Today</a>
+                            <p class="price mt-2">$55/Person</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/vr2.jpg" class="card-img-top" alt="Single Experience">
+                        <div class="card-body">
+                            <h5 class="card-title">Single Experience</h5>
+                            <p class="card-text">Solo? No problem, have the authentic VR experience at a much more affordable cost.</p>
+                            <a href="#" class="btn btn-primary">Book Today</a>
+                            <p class="price mt-2">$35/Hour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/vr3.jpg" class="card-img-top" alt="Rentals or Purchases">
+                        <div class="card-body">
+                            <h5 class="card-title">Rentals or Purchases</h5>
+                            <p class="card-text">Not feeling going in? No problem, rent our kits over and over for all the joys of VR from the comfort of your home.</p>
+                            <a href="#" class="btn btn-primary">Book Today</a>
+                            <p class="price mt-2">$55/Day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>© 2023 Reality Rift.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
 </body>
 </html>
