@@ -7,25 +7,35 @@
     <link rel="stylesheet" href="css/custom-styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.png" alt="Reality Rift" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Our Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Our Experts</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-primary" href="#">Book Now</a></li>
-            </ul>
+    <!-- The Navbar -->
+    <nav class="navbar fixed-top bg-light" style="background-color: #cb98d7;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="public/assets/images/logo.png" alt="Reality Rift" height="50">
+                Reality Rift
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Experts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="container-fluid justify-content-start">
+                <button class="btn btn-sm btn-outline-secondary" type="button">Book now</button>
+            </form>
         </div>
     </nav>
-
+    
     <!-- Home Page Section -->
     <section class="hero text-center py-5" style="background-image: url('assets/images/hero.jpg');">
         <div class="container">
