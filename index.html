@@ -342,6 +342,34 @@
 </section>
 
 <!-- Booking Section -->
+<section id="about" class="py-5" style="padding-top: 100px;">
+  <div class="container">
+      <h2 class="text-center mb-5">About Us</h2>
+      <p class="text-center">INFROMATION ABOUT US d.d.d.d.d.d.d.d.d.d.d.as.asdasdasdasdasdasd we are a vr company.... we want fun.... company values here, more information that noone will read...qw.d.as.da.sd.a .w.a.fs.dg.s.df.sd.s.df.s.df</p>
+      <p class="text-center">the text box will absdfjsdkfjlsdkfljfdslkldjfdfslkfjlsfjslkfjslfkslfkdklfjsdfjlfdjfljdfjlj about this large and I am filling space here</p>
+      <div class="footer-section text-center mt-4">
+          <div class="row">
+              <div class="col-md-2 offset-md-1">
+                  <p><strong>Address:</strong><br>51 location St</p>
+              </div>
+              <div class="col-md-2">
+                  <p><strong>Email:</strong><br>vr@gmail.com</p>
+              </div>
+              <div class="col-md-2">
+                  <p><strong>Phone:</strong><br>416-444-4444</p>
+              </div>
+              <div class="col-md-2">
+                  <p><strong>Fax:</strong><br>145-122-1653</p>
+              </div>
+              <div class="col-md-2">
+                  <p><strong>Postal Code:</strong><br>S4E 5B2</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Booking Section -->
 <section id="booking" class="py-5" style="background-color: #c378f2;">
   <div class="container">
       <h2 class="text-center mb-5">Booking</h2>
@@ -363,7 +391,12 @@
               </div>
               <div class="col-md-6">
                   <label for="type" class="form-label">Type</label>
-                  <input type="text" class="form-control" id="type" placeholder="Rental/Group activity etc">
+                  <select class="form-select" id="type">
+                      <option value="rental">Solo Experience</option>
+                      <option value="group">Group Experience</option>
+                      <option value="private">Rental</option>
+                      <option value="corporate">Purchase</option>
+                  </select>
               </div>
           </div>
           <div class="row mb-4">
@@ -397,30 +430,54 @@
           <h5 class="text-center mb-4">Experts</h5>
           <div class="row mb-4 text-center">
               <div class="col-md-4">
-                  <label class="form-label">Shooters</label>
-                  <input type="radio" class="form-check-input" name="expert" id="expert1">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="shooters" id="expert1">
+                      <label class="form-check-label" for="expert1">
+                          Shooters
+                      </label>
+                  </div>
               </div>
               <div class="col-md-4">
-                  <label class="form-label">Sports</label>
-                  <input type="radio" class="form-check-input" name="expert" id="expert2">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="sports" id="expert2">
+                      <label class="form-check-label" for="expert2">
+                          Sports
+                      </label>
+                  </div>
               </div>
               <div class="col-md-4">
-                  <label class="form-label">Open World</label>
-                  <input type="radio" class="form-check-input" name="expert" id="expert3">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="open-world" id="expert3">
+                      <label class="form-check-label" for="expert3">
+                          Open World
+                      </label>
+                  </div>
               </div>
           </div>
           <div class="row mb-4 text-center">
               <div class="col-md-4">
-                  <label class="form-label">Horror</label>
-                  <input type="radio" class="form-check-input" name="expert" id="expert4">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="horror" id="expert4">
+                      <label class="form-check-label" for="expert4">
+                          Horror
+                      </label>
+                  </div>
               </div>
               <div class="col-md-4">
-                  <label class="form-label">Sci-Fi</label>
-                  <input type="radio" class="form-check-input" name="expert" id="expert5">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="sci-fi" id="expert5">
+                      <label class="form-check-label" for="expert5">
+                          Sci-Fi
+                      </label>
+                  </div>
               </div>
               <div class="col-md-4">
-                  <label class="form-label">Escape Room</label>
-                  <input type="radio" class="form-check-input" name="expert" id="expert6">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="escape-room" id="expert6">
+                      <label class="form-check-label" for="expert6">
+                          Escape Room
+                      </label>
+                  </div>
               </div>
           </div>
           <div class="text-center">
