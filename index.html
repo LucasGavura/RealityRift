@@ -336,146 +336,155 @@
 </section>
 
 <!-- Booking Section -->
-<section id="booking" class="py-5" style="background-color: #c582ef;">
-  <div class="container">
-      <h2 class="text-center mb-5">Booking</h2>
-      <form id="bookingForm">
-          <div class="row mb-4">
-              <div class="col-md-6">
-                  <label for="firstName" class="form-label">First name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="John">
-              </div>
-              <div class="col-md-6">
-                  <label for="lastName" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Doe">
-              </div>
-          </div>
-          <div class="row mb-4">
-              <div class="col-md-6">
-                  <label for="email" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="email@gmail.com">
-              </div>
-              <div class="col-md-6">
-                  <label for="type" class="form-label">Type</label>
-                  <select class="form-select" id="type">
-                      <option value="Single Experience">Single Experience</option>
-                      <option value="Group Activity">Group Activity</option>
-                      <option value="Rental">Rental</option>
-                      <option value="Purchase">Purchase</option>
-                  </select>
-              </div>
-          </div>
-          <div class="row mb-4">
-              <div class="col-md-3">
-                  <label for="startTime" class="form-label">Start Time</label>
-                  <input type="time" class="form-control" id="startTime" value="11:00">
-              </div>
-              <div class="col-md-3">
-                  <label for="endTime" class="form-label">End Time</label>
-                  <input type="time" class="form-control" id="endTime" value="9:00">
-              </div>
-              <div class="col-md-2">
-                  <label for="day" class="form-label">Day</label>
-                  <input type="number" class="form-control" id="day" value="1">
-              </div>
-              <div class="col-md-2">
-                  <label for="month" class="form-label">Month</label>
-                  <input type="number" class="form-control" id="month" value="1">
-              </div>
-              <div class="col-md-2">
-                  <label for="year" class="form-label">Year</label>
-                  <input type="number" class="form-control" id="year" value="2024">
-              </div>
-          </div>
-          <div class="row mb-4">
-              <div class="col">
-                  <label for="message" class="form-label">Your message</label>
-                  <textarea class="form-control" id="message" rows="3" placeholder="Enter anything specific about your booking"></textarea>
-              </div>
-          </div>
-          <h5 class="text-center mb-4">Experts</h5>
-          <div class="row mb-4 text-center">
-              <div class="col-md-4">
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="Shooters" id="expert1">
-                      <label class="form-check-label" for="expert1">
-                          Shooters
-                      </label>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="Sports" id="expert2">
-                      <label class="form-check-label" for="expert2">
-                          Sports
-                      </label>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="Open World" id="expert3">
-                      <label class="form-check-label" for="expert3">
-                          Open World
-                      </label>
-                  </div>
-              </div>
-          </div>
-          <div class="row mb-4 text-center">
-              <div class="col-md-4">
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="Horror" id="expert4">
-                      <label class="form-check-label" for="expert4">
-                          Horror
-                      </label>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="Sci-Fi" id="expert5">
-                      <label class="form-check-label" for="expert5">
-                          Sci-Fi
-                      </label>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="Escape Room" id="expert6">
-                      <label class="form-check-label" for="expert6">
-                          Escape Room
-                      </label>
-                  </div>
-              </div>
-          </div>
-          <div class="text-center">
-              <button type="button" class="btn btn-primary btn-lg" style="width: 200px; background-color: #be20dae4;" onclick="submit()">Submit</button>
-          </div>        
-      </form>
-  </div>
-</section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Booking Section -->
+    <section id="booking" class="py-5" style="background-color: #c582ef;">
+        <div class="container">
+            <h2 class="text-center mb-5">Booking</h2>
+            <form id="bookingForm">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="John">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@gmail.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="type" class="form-label">Type</label>
+                        <select class="form-select" id="type">
+                            <option value="Single Experience">Single Experience</option>
+                            <option value="Group Activity">Group Activity</option>
+                            <option value="Rental">Rental</option>
+                            <option value="Purchase">Purchase</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <label for="startTime" class="form-label">Start Time</label>
+                        <input type="time" class="form-control" id="startTime" value="11:00">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="endTime" class="form-label">End Time</label>
+                        <input type="time" class="form-control" id="endTime" value="9:00">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="day" class="form-label">Day</label>
+                        <input type="number" class="form-control" id="day" value="1">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="month" class="form-label">Month</label>
+                        <input type="number" class="form-control" id="month" value="1">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="year" class="form-label">Year</label>
+                        <input type="number" class="form-control" id="year" value="2024">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <label for="message" class="form-label">Your message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Enter anything specific about your booking"></textarea>
+                    </div>
+                </div>
+                <h5 class="text-center mb-4">Experts</h5>
+                <div class="row mb-4 text-center">
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Shooters" id="expert1">
+                            <label class="form-check-label" for="expert1">
+                                Shooters
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Sports" id="expert2">
+                            <label class="form-check-label" for="expert2">
+                                Sports
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Open World" id="expert3">
+                            <label class="form-check-label" for="expert3">
+                                Open World
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4 text-center">
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Horror" id="expert4">
+                            <label class="form-check-label" for="expert4">
+                                Horror
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Sci-Fi" id="expert5">
+                            <label class="form-check-label" for="expert5">
+                                Sci-Fi
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Escape Room" id="expert6">
+                            <label class="form-check-label" for="expert6">
+                                Escape Room
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary btn-lg" style="width: 200px; background-color: #be20dae4;" onclick="submit()">Submit</button>
+                </div>        
+            </form>
+        </div>
+    </section>
 
-<!-- Confirmation Modal -->
-<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content" style="background-color: #f1e8f6;">
-          <div class="modal-header">
-              <h5 class="modal-title" id="confirmationModalLabel">Booking Confirmed!</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center">
-              <p>Your appointment has been confirmed and we look forward to seeing you on the <span id="confirmDate"></span>.</p>
-              <p>Details:</p>
-              <p>Appointment number: 12345</p>
-              <p>Time: <span id="confirmTime"></span></p>
-              <p>Service: <span id="confirmService"></span></p>
-              <p>Your Expert(s): <span id="confirmExperts"></span></p>
-          </div>
-          <div class="modal-footer justify-content-center">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
-              <button type="button" class="btn btn-primary" onclick="save()">Save</button>
-          </div>
-      </div>
-  </div>
-</div>
+    <!-- Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #c582ef;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Booking Confirmed!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Thank you!</p>
+                    <p>Your appointment has been confirmed and we look forward to seeing you on the <span id="confirmDate"></span>.</p>
+                    <h6>Details:</h6>
+                    <p>Appointment number: 12345</p>
+                    <p>Time: <span id="confirmTime"></span></p>
+                    <p>Service: <span id="confirmService"></span></p>
+                    <p>Your Expert(s): <span id="confirmExperts"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
   
     <!-- Footer -->
     <footer class="bg-light text-center py-3" style="background-color: #c4a3cf;">
