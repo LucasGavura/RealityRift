@@ -1,4 +1,4 @@
-function submit() {
+function submitForm() {
     // Collect form data
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
