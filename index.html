@@ -456,35 +456,31 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-primary btn-lg" style="width: 200px; background-color: #be20dae4;" onclick="submit()">Submit</button>
-                </div>        
-            </form>
-        </div>
-    </section>
+                  <button type="button" class="btn btn-primary btn-lg" style="width: 200px; background-color: #be20dae4;" onclick=submitForm()>Submit</button>
+              </div>        
+          </form>
+      </div>
+  </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="background-color: #c582ef;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="confirmationModalLabel">Booking Confirmed!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <p>Thank you!</p>
-                    <p>Your appointment has been confirmed and we look forward to seeing you on the <span id="confirmDate"></span>.</p>
-                    <h6>Details:</h6>
-                    <p>Appointment number: 12345</p>
-                    <p>Time: <span id="confirmTime"></span></p>
-                    <p>Service: <span id="confirmService"></span></p>
-                    <p>Your Expert(s): <span id="confirmExperts"></span></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content" style="background-color: #ffffff;">
+          <div class="modal-header">
+              <h5 class="modal-title" id="confirmationModalLabel">Booking Confirmed!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+              <p>Your appointment has been confirmed and we look forward to seeing you on the <span id="confirmDate"></span>.</p>
+              <p>Details:</p>
+              <p>Appointment number: 12345</p>
+              <p>Time: <span id="confirmTime"></span></p>
+              <p>Service: <span id="confirmService"></span></p>
+              <p>Your Expert(s): <span id="confirmExperts"></span></p>
+          </div>
+      </div>
+  </div>
+</div>
   
     <!-- Footer -->
     <footer class="bg-light text-center py-3" style="background-color: #c4a3cf;">
@@ -498,5 +494,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="src/js/custom-scripts.js"></script>
+    <script>
+      function submitForm() {
+          // Collect form data
+          const firstName = document.getElementById('firstName').value;
+          const lastName = document.getElementById('lastName').value;
+          const email = document.getElementById('email').value;
+          const type = document.getElementById('type').value;
+          const startTime = document.getElementById('startTime').value;
+          const endTime = document.getElementById('endTime').value;
+          const day = document.getElementById('day').value;
+          const month = document.getElementById('month').value;
+          const year = document.getElementById('year').value;
+          const message = document.getElementById('message').value;
+
+          // Collect experts
+          const experts = [];
+          document.querySelectorAll('input[type="checkbox"]:checked').forEach(checkbox => {
+              experts.push(checkbox.nextElementSibling.innerText);
+          });
+
+          // Update modal content
+          document.getElementById('confirmDate').innerText = `${day}/${month}/${year}`;
+          document.getElementById('confirmTime').innerText = `${startTime} - ${endTime}`;
+          document.getElementById('confirmService').innerText = type;
+          document.getElementById('confirmExperts').innerText = experts.join(', ');
+
+          // Show modal
+          const confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+          confirmationModal.show();
+      }
+  </script>
 </body>
 </html>
